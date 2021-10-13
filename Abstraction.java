@@ -1,5 +1,7 @@
 import java.util.*;
 
+import javax.swing.plaf.basic.BasicLabelUI;
+
 abstract class decide {
     abstract void result();
 }
@@ -14,11 +16,12 @@ class student extends decide {
         System.out.println("enter the student name,rollno:");
         studentname = scan.nextLine();
         rollno = scan.nextInt();
+        System.out.println("enter the student marks:");
+        marks = scan.nextInt();
     }
 
     public void result() {
-        System.out.println("enter the student marks:");
-        marks = scan.nextInt();
+
         System.out.println("Student name: " + studentname + "\nStudent Rollno: " + rollno);
         if (marks > 50) {
             System.out.println("Exam results:Pass");

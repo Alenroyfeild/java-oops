@@ -1,5 +1,10 @@
 import java.util.*;
 
+/*(base class )Passenger
+                    |
+                  Train
+                    |
+    (derived class)Inheritance*/
 class Passenger {
     private String passengername;
     private long cellno;
@@ -34,9 +39,9 @@ class train extends Passenger {
 class Inheritance extends train {
     public static void main(String args[]) {
         Inheritance i = new Inheritance();
-        i.getpassengerdetails();
-        i.gettraindetails();
-        i.displaypassengerdetails();
-        i.displaytraindetails();
+        i.getpassengerdetails();// accessing passenger class method through inheritance class object
+        i.gettraindetails();// accessing train class method through inheritance class object
+        i.displaypassengerdetails();// accessing passenger class method through inheritance class object
+        i.displaytraindetails();// accessing train class method through inheritance class object
     }
 }

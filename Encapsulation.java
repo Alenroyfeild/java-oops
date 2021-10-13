@@ -1,4 +1,4 @@
-import java.util.*;
+// import java.util.*;
 
 class Student1 {
     private String name;
@@ -15,7 +15,7 @@ class Student1 {
 class Encapsulation extends Student1 {
     public static void main(String[] args) {
         Encapsulation s = new Encapsulation();
-        s.getName("vijay");
+        s.getName("Balaji");
         s.displayName();
     }
 }
